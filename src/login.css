@@ -1,0 +1,120 @@
+body {
+    background-color: burlywood;
+    height: 450px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 160px;
+    padding-left: 20px;
+    font-size: 12px;
+  }
+  .heading p {
+    padding-top: 0px;
+    color: gray;
+    font-size: 20px;
+  }
+  .number{
+    position: absolute;
+    top: 100px;
+  }
+
+  .otp {
+    border: solid black 0px;
+    width: 360px;
+    height: 410px;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+    left: 420px;
+    background-color: rgb(245, 243, 243);
+  }
+  .number button {
+    color: green;
+  }
+.offer{
+      border: dotted grey 0.1px;
+      position: absolute;
+      left: 20px;
+      height: 100px;
+      width: 290px;
+      padding-left: 10px;
+      background-color: rgb(227, 198, 203);
+  }
+  .number h2{
+   position: absolute;
+   top: 10px;
+   left: 0px;
+   font-size: 25px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: red;
+
+
+  }
+  .number p{
+    color:black ;
+    padding-left: 16px;
+    position: absolute;
+    top: 40px;
+    font-weight: 600;
+  }
+  .number input {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 80px;
+    top: 140px;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .number input:focus {
+    outline: none;
+  }
+  .nine {
+    border: solid black 1px;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    width: 40px;
+    padding-top: 13px;
+    height: 31px;
+    background-color: white;
+    border-right: aliceblue;
+  }
+  
+  .number button {
+    position: absolute;
+    top: 230px;
+    left: 40px;
+    width: 280px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #terms {
+    position: absolute;
+    font-size: 13px;
+    top: 185px;
+    left: 15px;
+    color: grey;
+    width:190px;
+  }
+  #conditions {
+    color: rgb(223, 99, 198);
+    position: absolute;
+    top: -15px;
+    font-size: 15px;
+    font-weight: 600;
+    left: 155px;
+    width: 160px;
+    z-index: 3;
+  }
+  
