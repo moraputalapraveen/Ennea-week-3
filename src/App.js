@@ -1,35 +1,35 @@
-import "./App.css";
+// App.js
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import { useTheme } from './context/ThemeContext';
+import { lightTheme, darkTheme } from './styles/themes';
+import styled, { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Navbar from "./navbar.js";
+const AppContainer = styled.div`
+  min-height: 100vh;
+  display: flex;
+  background-color: ${({ theme }) => theme.background};
+  flex-direction: column;
+`;
 
-import ProductList from "./products.js";
-import {  Link } from "react-router-dom";
+const App = () => {
+  const { theme } = useTheme();
+  const currentTheme = theme === 'light' ? lightTheme : darkTheme;
 
-export default  function App() {
   return (
-    <>
-    
-  <Navbar/>
-    <div className="navbar2">
-      <h1><Link to="/mobiles/:id">Mobiles</Link></h1>
-      <h1>Earphones</h1>
-      <h1>Televisions</h1>
-      <h1>Electronics</h1>
-      <h1>fashions</h1>
-      <h1>Furnitures</h1>
-      <h1>Beauty</h1>
-      <h1>Travel</h1>
-      <h1>Grocery</h1>
-      </div>
-    <div className="frontpic">
-      <div >< ArrowBackIosIcon id="back"/></div>
-      <img  className="front" src="/front.jpg" />
-      <div >< ArrowForwardIosIcon id="front2"/></div>
-    </div>
-    <h1 id="deals">Today Top Deals</h1>
-    <div className="products"><ProductList/></div>
-    </>
-  )
-}
+    <StyledThemeProvider theme={currentTheme}>
+      <AppContainer>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </AppContainer>
+    </StyledThemeProvider>
+  );
+};
+
+export default App;
