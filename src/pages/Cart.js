@@ -1,4 +1,4 @@
-// pages/Cart.js
+
 import React from 'react';
 import { useCart } from '../context/CartContext';
 import styled from 'styled-components';

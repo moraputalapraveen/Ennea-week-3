@@ -1,9 +1,9 @@
-// styles/themes.js
+
 export const lightTheme = {
-    background: 'lightblue', // Use camelCase for CSS properties
+    background: 'lightblue', 
   };
   
   export const darkTheme = {
-    background: 'lightyellow', // Use camelCase for CSS properties
+    background: 'lightyellow', 
   };
   

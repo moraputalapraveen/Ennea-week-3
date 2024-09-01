@@ -34,9 +34,9 @@
 
    
 
-"name": "your-app-name",
+"name": "ecomerce",
   "version": "0.1.0",
-  "homepage": "https://github.com/moraputalapraveen/Ennea-week-3.git",
+  "homepage": ".",
 
 
 
@@ -499,7 +499,7 @@
 
 
 
-
+ 
 
 
    
@@ -555,7 +555,8 @@
 
 
 
-
+"predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
 
 
 
